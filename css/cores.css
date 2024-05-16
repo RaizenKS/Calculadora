@@ -1,0 +1,46 @@
+/* Cores letras */
+.c-fundoHeader{color: #cc2020;}
+.c-h1{ color: #f04141;}
+.c-yellow{color: rgb(223, 210, 34);}
+.c-white{color: white;}
+.c-black{color: black;}
+
+/* Background cores */
+.bg-fundoHeader{background-color: #B9121B;}
+.bg-white{background-color: white;}
+.bg-black{background-color: black;}
+.bg-gray{background-color: rgb(82, 85, 85);}
+
+/* outros */
+.hidden{display: none;}
+
+/* configs buttons */
+.buttonNum{
+    background-color: rgb(39, 43, 44);
+    color: white;
+}
+
+.buttonNum:hover{
+    background-color: rgb(47, 51, 51) ;
+}
+
+/* operadores */
+.buttonOPS{
+  background-color: rgb(68, 75, 77); 
+  color: white; 
+}
+
+.buttonOPS:hover{
+    background-color: rgb(84, 93, 95); 
+  }
+
+/* Main butons */
+.buttonMain{
+    background-color: rgb(28, 143, 182);
+    color: white;
+}
+
+.buttonMain:hover{
+    background-color: rgb(50, 182, 226);
+}
+
