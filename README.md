@@ -1,5 +1,5 @@
-Uma calculadora feita puramente em html, css, javascript.
-Você pode conferir ela neste link onde eu hospedei ela no netlify:
+Uma calculadora feita puramente em html, css, javascript. <br>
+Você pode conferir ela neste link onde eu hospedei ela no netlify: <br>
 https://calculadora-rk.netlify.app
 
 ![Calculadora](https://github.com/RaizenKS/Calculadora/assets/144627312/92099fe2-fb19-471b-adf1-8ea201ac76d1)
