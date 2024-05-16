@@ -1,4 +1,4 @@
-Uma calculadora feita puramente em html, css, javascript. <br>
+  Uma calculadora feita puramente em html, css, javascript. <br>
 Você pode conferir ela neste link onde eu hospedei ela no netlify: <br>
 https://calculadora-rk.netlify.app
 
