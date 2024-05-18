@@ -57,16 +57,17 @@ body{
     width: 90%;
     display: flex;
     flex-wrap: wrap;
+    background-color: rgb(68, 75, 77);
 }
 
 .bt{
     height: 25%;
-    width: 33.335%;
+    width: 33%;
     box-shadow: 1px 1px 2px black;
 }
 
 .bt0{
-    width:66.669%;
+    width:66%;
 }
 
 .btX{
