@@ -8,6 +8,12 @@ Calculando:
 
 ![calculadoraAction](https://github.com/RaizenKS/Calculadora/assets/144627312/0ae1a9f8-1852-4a83-8bc6-d91c6b4428cd)
 
+TECNOLOGIAS UTILIZADAS ⬇️
+
+▪️ HTML
+▪️ CSS
+▪️ JAVASCRIPT
+▪️ BOOTSTRAP
 
 
 
