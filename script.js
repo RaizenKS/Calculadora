@@ -28,7 +28,7 @@ class Calculadora{
             }
         }
        
-        if(num !== undefined){
+        if(num){
             calculadora.resultado.textContent = num;
             calculadora.numtop.textContent = num; 
         }else{
@@ -82,8 +82,7 @@ class Calculadora{
                 calculadora.numtop.textContent += ' ' + input + ' ';
             }else{
                 calculadora.numtop.textContent += input;
-            }
-            
+            }  
         }
 
         //Reset
