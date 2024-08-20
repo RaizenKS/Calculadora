@@ -1,0 +1,45 @@
+/* Cores letras */
+.c-white{color: white;}
+.c-black{color: black;}
+.c-dw{color: rgb(212, 212, 212);}
+
+/* Background cores */
+.bg-white{background-color: white;}
+.bg-black{background-color: black;}
+.bg-gray{background-color: rgb(82, 85, 85);}
+.bg-main{background-color: #7db44c;}
+.bg-sec1{background: linear-gradient(to right,#358f1a, #63BC47);}
+.bg-cadastro{background: linear-gradient(to right, #8ce78c, 50%, #171817)}
+
+.bg-header{background-color: rgb(56, 57, 54);}
+
+
+/* Outros */
+.hidden{
+    display: none !important;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    background-color: black !important;
+    opacity: 0.2;
+}
+
+/* Buttons */
+.button-buy{
+    background-color: #7db44c;
+    color: white;
+}
+
+.button-buy:hover{
+background-color: rgb(99, 99, 91);
+color: white;
+}
+
+.button-buy:active{color: rgb(255, 255, 255)!important; background-color: rgb(60, 109, 41) !important;}
+
+

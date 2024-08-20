@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{margin: 0px; padding: 0px; box-sizing: border-box;}
+
+body{
+    background-color: rgb(56, 38, 21);
+    color: white;
+    height: 100vh;
+    padding: 1rem 0px;
+}
+
+h1{
+    font-family: "Montserrat";
+       text-align: center;
+       font-size: 2rem;
+       margin: 2rem 0px;
+    }
+
+#calculadora{
+    margin: auto;
+    height: 400px;
+    width: 350px ;
+    background-color: rgb(85, 63, 35);
+    padding: 2.5% 0px;
+}
+
+/* tela */
+
+#screen{
+    border: 1px solid rgb(172, 135, 92);
+    width: 65%;
+    margin: 0px auto 2rem auto;
+    padding: 0px 1rem;
+}
+
+#number-top{
+    height: 40%;
+    text-align: end;
+    font-size:medium;
+}
+#resultado{
+    height: 60%;
+    text-align: end;
+    font-size: large;
+    font-weight: bold;
+}
+
+/* buttoes */
+
+.buttons-container{
+    width: 65%;
+    height: 14%;
+    margin:0px auto 2% auto;
+}
+
+.btn-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.buttons{
+    height: 100%;
+    width: 22%;
+    font-size: "montserrat";
+    color: white;
+    border: none;
+    background-color: rgb(126, 94, 72);
+}
+
+.numbers{font-weight: bold;}
+
+.buttons:hover{
+background-color:rgb(197, 140, 103) ;
+}
+
+.zero,#equal-btn{
+    width: 47.5%;
+}
