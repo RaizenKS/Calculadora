@@ -10,12 +10,13 @@ class Calculadora{
         let array = calculadora.numtop.textContent.split(' ');
         let num = undefined;
 
-        for(i=0; i<array.length; i++){
+        for(let i=0; i<array.length; i++){
             if(num == undefined){
                 switch(array[i]){
                     case '+': num = parseFloat(array[i-1]) + parseFloat(array[i+1]); break  
                     case '-': num = parseFloat(array[i-1]) - parseFloat(array[i+1]); break 
                     case 'X': num = parseFloat(array[i-1]) * parseFloat(array[i+1]); break 
+                    case '*': num = parseFloat(array[i-1]) * parseFloat(array[i+1]); break 
                     case '/': num = parseFloat(array[i-1]) / parseFloat(array[i+1]); break 
                 }
             }else{
@@ -23,6 +24,7 @@ class Calculadora{
                     case '+': num = num + parseFloat(array[i+1]); break  
                     case '-': num = num - parseFloat(array[i+1]); break 
                     case 'X': num = num * parseFloat(array[i+1]); break 
+                    case '*': num = num * parseFloat(array[i+1]); break 
                     case '/': num = num / parseFloat(array[i+1]); break 
                 }               
             }
@@ -57,12 +59,11 @@ class Calculadora{
     }
 
     //When btn press, create the numbers and put in variable numtop
-    btnPress(){
-        let input = this.textContent;
+    btnPress(btn){
+        let input = btn;
         let numtop = calculadora.numtop.textContent;
         let reg = new RegExp('^\\d+$'); 
 
-       
         if(calculadora.checkLastDigit(input,numtop,reg)){
             return false;
         }
@@ -77,7 +78,8 @@ class Calculadora{
         }
         
         //add spaces beetween the numbers and the operators
-        if(!reg.test(input)){
+        if(!reg.test(input) && 
+        (input == '.' || input == '/' || input == '+' || input == 'X' || input == '-' || input == 'c' || input == '*')){
             if(input !== '.'){
                 calculadora.numtop.textContent += ' ' + input + ' ';
             }else{
@@ -86,12 +88,10 @@ class Calculadora{
         }
 
         //Reset
-        if(this.textContent == "AC"){
+        if(input == "AC" || input == 'c'){
             calculadora.clearValue()
-        } 
-
         //Result
-        if(this.textContent == "="){
+        }else if(input == "=" || input == "Enter"){
             calculadora.operation();
         }
     }
@@ -101,7 +101,14 @@ let buttons = document.querySelectorAll(".buttons")
 
 const calculadora = new Calculadora();
 
-for(i=0; i<buttons.length; i++){
-    buttons[i].addEventListener('click', calculadora.btnPress)
+for(let i=0; i<buttons.length; i++){
+    buttons[i].addEventListener('click',function(){
+        calculadora.btnPress(buttons[i].textContent)
+    })
 }
+
+document.addEventListener('keypress', (event)=> {
+    calculadora.btnPress(event.key)
+})
+
 
